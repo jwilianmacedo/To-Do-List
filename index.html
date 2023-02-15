@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container container-center">
+        <h1>TO-DO LIST</h1>
+
+        <!-- Caixa de adicionar tarefas -->
+        <div class="container-add container-center"> 
+            <label for="Tarefas">Tarefa: </label>
+            <input type="text" name="tarefa" id="txt-tarefa">
+            <img src="imagens/plus.png" alt="adicionar" height="35px" id="id-adicionar" onclick="adicionarTarefa()" >
+            
+            <abbr title="Confirmar">
+                <img src="imagens/check_blue.png" alt="confirmar"  height="35px" class="esconder-botoes" id="id-confirmar" onclick="confirmar()">
+            </abbr>
+
+             <abbr title="cancelar">
+                <img src="imagens/x_red.png" alt="cancelar" height="35px" class="esconder-botoes" id="id-cancelar" onclick="cancelar()">
+            </abbr>
+
+        </div>
+
+        <div>
+            <ul id="grid-tarefas"></ul>
+        </div>
+
+        <div class="container-pesquisa">
+                <!--<i class="material-icons">search</i>-->
+                <input type="text" name="pesquisar" id="txt-pesquisar" placeholder="&#x1F50D Pesquisar" oninput="pesquisa()">
+        </div>
+
+
+        <div class="container-filtro container-center">
+            <input type="radio" name="filtro" id="todas" checked onclick="filtrarTodas()"><label for="todas">Todas</label>
+
+            <input type="radio" name="filtro" id="completadas" onclick="filtrar(true)"><label for="completadas">Completadas</label>
+
+            <input type="radio" name="filtro" id="naoCompletadas" onclick="filtrar(false)"><label for="naoCompletadas">Não Completadas</label>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
