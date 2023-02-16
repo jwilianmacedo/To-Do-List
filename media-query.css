@@ -22,7 +22,7 @@ body {
 
 main {
     height: auto;
-    width: 390px;
+    width: 340px;
     background-color: white;
     margin: auto;
     margin-top: 80px;
@@ -45,18 +45,18 @@ h1 {
 }
 
 .container-add>label {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .container-add>input {
-    width: 200px;
+    width: 180px;
     height: 30px;
     font-size: 1.2em;
 }
 
 .container-tarefa {
     height: auto;
-    width: 300px;
+    width: 275px;
     padding: 10px;
     border-radius: 3px;
     margin: 10px;
@@ -79,7 +79,7 @@ img {
   }
 
 .container-pesquisa > input {
-    width: 300px;
+    width: 275px;
     height: 30px;
     font-size: 1.2em;
     text-align: center;
@@ -101,7 +101,7 @@ img {
     flex-wrap: wrap;
     align-content: center;
     column-gap: 5px;
-    font-size: 1em;
+    font-size: 0.8em;
     margin: 20px;
 }
 
