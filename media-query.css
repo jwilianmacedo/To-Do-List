@@ -9,7 +9,7 @@ Deskpot: de 992px até 1200px
 Grandes telas: acima dde 1200px
 */
 
-@media screen and (min-width: 400px) and (max-width:600px) {
+@media screen and (min-width: 400px) and (max-width: 500px) {
 * {
     margin: 0px;
     padding: 0px;
